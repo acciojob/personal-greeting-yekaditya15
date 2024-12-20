@@ -7,12 +7,13 @@ const App = () => {
   const handelInputChange = (e) => {
     setName(e.target.value);
   };
+
   return (
     <div>
       <label>Enter your name: </label>
       <br />
       <input type="text" value={name} onChange={handelInputChange} />
-      <p>'{name}'</p>
+      <p>{name ? `Hello ${name}!` : ""}</p>
     </div>
   );
 };
