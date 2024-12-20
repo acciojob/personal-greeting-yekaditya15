@@ -12,7 +12,7 @@ const App = () => {
       <label>Enter your name: </label>
       <br />
       <input type="text" value={name} onChange={handelInputChange} />
-      <p>{name}</p>
+      <p>'{name}'</p>
     </div>
   );
 };
